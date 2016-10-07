@@ -1,32 +1,32 @@
 # xcode
-frontend/build/*
-frontend/*.pbxuser
-frontend/!default.pxuser
-frontend/*.mode1v3
-frontend/!default.mode1v3
-frontend/*.mode2v3
-frontend/!default.mode2v3
-frontend/*.perspectivev3
-frontend/!default.perspectivev3
-frontend/*.xcworkspace
-frontend/!default.xcworkspace
-frontend/xcuserdata
-frontend/profile
-frontend/*.moved-aside
-frontend/*.swp
-frontend/_site
-frontend/!Objection.xcworkspace
-frontend/pkg
+frontend/Art-Data/build/*
+frontend/Art-Data/*.pbxuser
+frontend/Art-Data/!default.pxuser
+frontend/Art-Data/*.mode1v3
+frontend/Art-Data/!default.mode1v3
+frontend/Art-Data/*.mode2v3
+frontend/Art-Data/!default.mode2v3
+frontend/Art-Data/*.perspectivev3
+frontend/Art-Data/!default.perspectivev3
+frontend/Art-Data/*.xcworkspace
+frontend/Art-Data/!default.xcworkspace
+frontend/Art-Data/xcuserdata
+frontend/Art-Data/profile
+frontend/Art-Data/*.moved-aside
+frontend/Art-Data/*.swp
+frontend/Art-Data/_site
+frontend/Art-Data/!Objection.xcworkspace
+frontend/Art-Data/pkg
 .DS_Store
 
 #CocoaPod
-frontend/Pods/*
-frontend/Podfile.lock
+frontend/Art-Data/Pods/*
+frontend/Art-Data/Podfile.lock
 
 # Carthage
-frontend/Carthage/Checkouts
-frontend/Carthage/Build
+frontend/Art-Data/Carthage/Checkouts
+frontend/Art-Data/Carthage/Build
 
 #AppCode
-frontend/.idea
+frontend/Art-Data/.idea
 
