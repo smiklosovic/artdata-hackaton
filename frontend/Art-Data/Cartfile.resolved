@@ -1,3 +1,7 @@
 github "Alamofire/Alamofire" "4.0.1"
+github "Hearst-DD/ObjectMapper" "2.1.0"
+github "jakenberg/ObjectMapper-Realm" "0.2"
 github "antitypical/Result" "3.0.0"
-github "ReactiveCocoa/ReactiveSwift" "1.0.0-alpha.1"
+github "mchoe/SwiftSVG" "v1.1.5"
+github "ReactiveCocoa/ReactiveSwift" "1.0.0-alpha.2"
+github "tristanhimmelman/AlamofireObjectMapper" "4.0.0"
