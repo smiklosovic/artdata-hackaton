@@ -6,11 +6,21 @@
 //  Copyright © 2016 Community. All rights reserved.
 //
 
-import UIKit
+import ObjectMapper
 
-class AssetModel: AnyObject {
+class AssetModel: Mappable {
 
-    var link: String!
-    var title: String!
-    var author: String!
+    var link: String?
+    var title: String?
+    var author: String?
+    
+    required init?(map: Map) {
+    
+    }
+    
+    func mapping(map: Map) {
+        link <- map["link"]
+        title <- map["title"]
+        author <- map["author"]
+    }
 }

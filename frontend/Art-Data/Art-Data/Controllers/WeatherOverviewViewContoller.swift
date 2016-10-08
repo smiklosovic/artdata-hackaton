@@ -10,13 +10,12 @@ import UIKit
 
 class WeatherOverviewViewContoller: UIViewController {
 
-    @IBOutlet weak var topComponentView: UIView!
-    @IBOutlet weak var bottomComponentView: UIView!
     @IBOutlet weak var temperatureLabel: UILabel!
     @IBOutlet weak var weatherStateLabel: UILabel!
     @IBOutlet weak var artImage: UIImageView!
     @IBOutlet weak var imageNameLabel: UILabel!
     @IBOutlet weak var authorNameLabel: UILabel!
+    @IBOutlet weak var descriptionLabel: UILabel!
     @IBOutlet weak var moreBtn: UIButton!
     
     lazy var viewModel: WeatherOverviewViewModel = {
@@ -29,7 +28,7 @@ class WeatherOverviewViewContoller: UIViewController {
     }
     
     func configureUI() {
-        
+        viewModel.loadModel()
     }
     
 }

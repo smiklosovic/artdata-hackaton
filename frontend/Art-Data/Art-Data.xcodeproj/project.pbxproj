@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		5D73B7A51DA91381000AE25C /* AssetModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D73B7A41DA91381000AE25C /* AssetModel.swift */; };
+		5D73B7AC1DA922CB000AE25C /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D73B7A71DA922CB000AE25C /* Alamofire.framework */; };
+		5D73B7AD1DA922CB000AE25C /* AlamofireObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D73B7A81DA922CB000AE25C /* AlamofireObjectMapper.framework */; };
+		5D73B7AE1DA922CB000AE25C /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D73B7A91DA922CB000AE25C /* ObjectMapper.framework */; };
+		5D73B7AF1DA922CB000AE25C /* ReactiveSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D73B7AA1DA922CB000AE25C /* ReactiveSwift.framework */; };
+		5D73B7B01DA922CB000AE25C /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D73B7AB1DA922CB000AE25C /* Result.framework */; };
 		5D7B71751DA84318000ED98A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D7B71741DA84318000ED98A /* AppDelegate.swift */; };
 		5D7B717A1DA84318000ED98A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D7B71781DA84318000ED98A /* Main.storyboard */; };
 		5D7B717C1DA84318000ED98A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D7B717B1DA84318000ED98A /* Assets.xcassets */; };
@@ -16,9 +21,6 @@
 		5D7B71A01DA87810000ED98A /* WeatherOverviewViewContoller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D7B71991DA87810000ED98A /* WeatherOverviewViewContoller.swift */; };
 		5D7B71A11DA87810000ED98A /* ConnectionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D7B719C1DA87810000ED98A /* ConnectionService.swift */; };
 		5D7B71A21DA87810000ED98A /* WeatherOverviewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D7B719E1DA87810000ED98A /* WeatherOverviewViewModel.swift */; };
-		5D7B71B61DA87A53000ED98A /* i8.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 5D7B71B21DA87A53000ED98A /* i8.jpeg */; };
-		5D7B71B71DA87A53000ED98A /* m3.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 5D7B71B31DA87A53000ED98A /* m3.jpeg */; };
-		5D7B71B81DA87A53000ED98A /* m5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5D7B71B41DA87A53000ED98A /* m5.jpg */; };
 		5D7B71BE1DA87E0F000ED98A /* WeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D7B71BD1DA87E0F000ED98A /* WeatherModel.swift */; };
 /* End PBXBuildFile section */
 
@@ -34,6 +36,11 @@
 
 /* Begin PBXFileReference section */
 		5D73B7A41DA91381000AE25C /* AssetModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssetModel.swift; sourceTree = "<group>"; };
+		5D73B7A71DA922CB000AE25C /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		5D73B7A81DA922CB000AE25C /* AlamofireObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AlamofireObjectMapper.framework; path = Carthage/Build/iOS/AlamofireObjectMapper.framework; sourceTree = "<group>"; };
+		5D73B7A91DA922CB000AE25C /* ObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjectMapper.framework; path = Carthage/Build/iOS/ObjectMapper.framework; sourceTree = "<group>"; };
+		5D73B7AA1DA922CB000AE25C /* ReactiveSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveSwift.framework; path = Carthage/Build/iOS/ReactiveSwift.framework; sourceTree = "<group>"; };
+		5D73B7AB1DA922CB000AE25C /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
 		5D7B71711DA84318000ED98A /* Art-Data.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Art-Data.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D7B71741DA84318000ED98A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5D7B71791DA84318000ED98A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -46,9 +53,6 @@
 		5D7B71991DA87810000ED98A /* WeatherOverviewViewContoller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherOverviewViewContoller.swift; sourceTree = "<group>"; };
 		5D7B719C1DA87810000ED98A /* ConnectionService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectionService.swift; sourceTree = "<group>"; };
 		5D7B719E1DA87810000ED98A /* WeatherOverviewViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherOverviewViewModel.swift; sourceTree = "<group>"; };
-		5D7B71B21DA87A53000ED98A /* i8.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = i8.jpeg; sourceTree = "<group>"; };
-		5D7B71B31DA87A53000ED98A /* m3.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = m3.jpeg; sourceTree = "<group>"; };
-		5D7B71B41DA87A53000ED98A /* m5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = m5.jpg; sourceTree = "<group>"; };
 		5D7B71BD1DA87E0F000ED98A /* WeatherModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -57,6 +61,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5D73B7AC1DA922CB000AE25C /* Alamofire.framework in Frameworks */,
+				5D73B7AD1DA922CB000AE25C /* AlamofireObjectMapper.framework in Frameworks */,
+				5D73B7AE1DA922CB000AE25C /* ObjectMapper.framework in Frameworks */,
+				5D73B7AF1DA922CB000AE25C /* ReactiveSwift.framework in Frameworks */,
+				5D73B7B01DA922CB000AE25C /* Result.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +79,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5D73B7A61DA922CB000AE25C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5D73B7A71DA922CB000AE25C /* Alamofire.framework */,
+				5D73B7A81DA922CB000AE25C /* AlamofireObjectMapper.framework */,
+				5D73B7A91DA922CB000AE25C /* ObjectMapper.framework */,
+				5D73B7AA1DA922CB000AE25C /* ReactiveSwift.framework */,
+				5D73B7AB1DA922CB000AE25C /* Result.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		5D7B71681DA84318000ED98A = {
 			isa = PBXGroup;
 			children = (
 				5D7B71731DA84318000ED98A /* Art-Data */,
 				5D7B71881DA84319000ED98A /* Art-DataTests */,
 				5D7B71721DA84318000ED98A /* Products */,
+				5D73B7A61DA922CB000AE25C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -93,8 +115,8 @@
 			children = (
 				5D7B71981DA87810000ED98A /* Controllers */,
 				5D7B719A1DA87810000ED98A /* Models */,
-				5D7B719B1DA87810000ED98A /* Services */,
 				5D7B719D1DA87810000ED98A /* ViewModels */,
+				5D7B719B1DA87810000ED98A /* Services */,
 				5D7B71B01DA87A53000ED98A /* Resources */,
 				5D7B71741DA84318000ED98A /* AppDelegate.swift */,
 				5D7B71781DA84318000ED98A /* Main.storyboard */,
@@ -158,9 +180,6 @@
 		5D7B71B11DA87A53000ED98A /* Assets */ = {
 			isa = PBXGroup;
 			children = (
-				5D7B71B21DA87A53000ED98A /* i8.jpeg */,
-				5D7B71B31DA87A53000ED98A /* m3.jpeg */,
-				5D7B71B41DA87A53000ED98A /* m5.jpg */,
 			);
 			path = Assets;
 			sourceTree = "<group>";
@@ -250,12 +269,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5D7B71B71DA87A53000ED98A /* m3.jpeg in Resources */,
-				5D7B71B61DA87A53000ED98A /* i8.jpeg in Resources */,
 				5D7B717F1DA84318000ED98A /* LaunchScreen.storyboard in Resources */,
 				5D7B717C1DA84318000ED98A /* Assets.xcassets in Resources */,
 				5D7B717A1DA84318000ED98A /* Main.storyboard in Resources */,
-				5D7B71B81DA87A53000ED98A /* m5.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +291,11 @@
 			files = (
 			);
 			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/AlamofireObjectMapper.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/ObjectMapper.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/ReactiveSwift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Result.framework",
 			);
 			name = "Carthage copy";
 			outputPaths = (
@@ -435,6 +456,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = J6W248GRQS;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "Art-Data/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.community.Art-Data";
@@ -448,6 +473,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = J6W248GRQS;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "Art-Data/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.community.Art-Data";

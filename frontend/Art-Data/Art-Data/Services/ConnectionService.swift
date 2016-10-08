@@ -7,6 +7,9 @@
 //
 
 import UIKit
+import Alamofire
+import ObjectMapper
+import AlamofireObjectMapper
 
 class ConnectionService: AnyObject {
     
@@ -14,8 +17,20 @@ class ConnectionService: AnyObject {
         return URL(string: "test")!
     }()
 
-    func getRequestForWeather() -> WeatherModel{
+    func getRequestForWeather() {
         
-        return WeatherModel()
+        let url = "https://raw.githubusercontent.com/tristanhimmelman/AlamofireObjectMapper/d8bb95982be8a11a2308e779bb9a9707ebe42ede/sample_json"
+        Alamofire.request(url).responseObject { (response: DataResponse<WeatherModel>) in
+            
+//            let weatherResponse = response.result.value
+//            print(weatherResponse?.location)
+//            
+//            if let threeDayForecast = weatherResponse?.threeDayForecast {
+//                for forecast in threeDayForecast {
+//                    print(forecast.day)
+//                    print(forecast.temperature)           
+//                }
+//            }
+        }
     }
 }
