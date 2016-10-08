@@ -1,0 +1,8 @@
+github "Alamofire/Alamofire" "4.0.1"
+github "Hearst-DD/ObjectMapper" "2.1.0"
+github "jakenberg/ObjectMapper-Realm" "0.2"
+github "antitypical/Result" "3.0.0"
+github "timrwood/SVGPath" "eacca6c613d4a2280f7c506af80d21ee64581f17"
+github "Alamofire/AlamofireImage" "3.1.0"
+github "ReactiveCocoa/ReactiveSwift" "1.0.0-alpha.2"
+github "tristanhimmelman/AlamofireObjectMapper" "4.0.0"

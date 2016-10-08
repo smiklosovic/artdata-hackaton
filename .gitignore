@@ -1,0 +1,33 @@
+# xcode
+frontend/Art-Data/build/*
+frontend/Art-Data/*.pbxuser
+frontend/Art-Data/!default.pxuser
+frontend/Art-Data/*.mode1v3
+frontend/Art-Data/!default.mode1v3
+frontend/Art-Data/*.mode2v3
+frontend/Art-Data/!default.mode2v3
+frontend/Art-Data/*.perspectivev3
+frontend/Art-Data/!default.perspectivev3
+frontend/Art-Data/*.xcworkspace
+frontend/Art-Data/!default.xcworkspace
+frontend/Art-Data/xcuserdata
+frontend/Art-Data/profile
+frontend/Art-Data/*.moved-aside
+frontend/Art-Data/*.swp
+frontend/Art-Data/_site
+frontend/Art-Data/!Objection.xcworkspace
+frontend/Art-Data/pkg
+.DS_Store
+
+#CocoaPod
+frontend/Art-Data/Pods/*
+frontend/Art-Data/Podfile.lock
+
+# Carthage
+frontend/Art-Data/Carthage/Checkouts
+frontend/Art-Data/Carthage/Build
+
+#AppCode
+frontend/Art-Data/.idea
+
+artdata-hackaton-0.1.0.jar
