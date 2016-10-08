@@ -7,21 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5D73B7A51DA91381000AE25C /* AssetModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D73B7A41DA91381000AE25C /* AssetModel.swift */; };
 		5D73B7AC1DA922CB000AE25C /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D73B7A71DA922CB000AE25C /* Alamofire.framework */; };
 		5D73B7AD1DA922CB000AE25C /* AlamofireObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D73B7A81DA922CB000AE25C /* AlamofireObjectMapper.framework */; };
 		5D73B7AE1DA922CB000AE25C /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D73B7A91DA922CB000AE25C /* ObjectMapper.framework */; };
 		5D73B7AF1DA922CB000AE25C /* ReactiveSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D73B7AA1DA922CB000AE25C /* ReactiveSwift.framework */; };
 		5D73B7B01DA922CB000AE25C /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D73B7AB1DA922CB000AE25C /* Result.framework */; };
+		5D73B7B31DA92BC3000AE25C /* ResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D73B7B21DA92BC3000AE25C /* ResponseModel.swift */; };
+		5D73B7B51DA92BFE000AE25C /* MuseetModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D73B7B41DA92BFE000AE25C /* MuseetModel.swift */; };
 		5D7B71751DA84318000ED98A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D7B71741DA84318000ED98A /* AppDelegate.swift */; };
 		5D7B717A1DA84318000ED98A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D7B71781DA84318000ED98A /* Main.storyboard */; };
 		5D7B717C1DA84318000ED98A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D7B717B1DA84318000ED98A /* Assets.xcassets */; };
 		5D7B717F1DA84318000ED98A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D7B717D1DA84318000ED98A /* LaunchScreen.storyboard */; };
 		5D7B718A1DA84319000ED98A /* Art_DataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D7B71891DA84319000ED98A /* Art_DataTests.swift */; };
 		5D7B71A01DA87810000ED98A /* WeatherOverviewViewContoller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D7B71991DA87810000ED98A /* WeatherOverviewViewContoller.swift */; };
-		5D7B71A11DA87810000ED98A /* ConnectionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D7B719C1DA87810000ED98A /* ConnectionService.swift */; };
-		5D7B71A21DA87810000ED98A /* WeatherOverviewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D7B719E1DA87810000ED98A /* WeatherOverviewViewModel.swift */; };
 		5D7B71BE1DA87E0F000ED98A /* WeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D7B71BD1DA87E0F000ED98A /* WeatherModel.swift */; };
+		5D8124171DA93EBB002FBF77 /* Lato-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5D8124121DA93EBB002FBF77 /* Lato-Bold.ttf */; };
+		5D8124181DA93EBB002FBF77 /* Lato-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5D8124131DA93EBB002FBF77 /* Lato-Regular.ttf */; };
+		5D8124191DA93EBB002FBF77 /* visitus_button_day.svg in Resources */ = {isa = PBXBuildFile; fileRef = 5D8124151DA93EBB002FBF77 /* visitus_button_day.svg */; };
+		5D81241A1DA93EBB002FBF77 /* visitus_button_night.svg in Resources */ = {isa = PBXBuildFile; fileRef = 5D8124161DA93EBB002FBF77 /* visitus_button_night.svg */; };
+		5D81241E1DA942BB002FBF77 /* SVGPath.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D81241C1DA942BB002FBF77 /* SVGPath.framework */; };
+		5D8124201DA942CC002FBF77 /* AlamofireImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D81241F1DA942CC002FBF77 /* AlamofireImage.framework */; };
+		5D8124241DA947C9002FBF77 /* visitus_button_night.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D8124231DA947C9002FBF77 /* visitus_button_night.png */; };
+		5D8124261DA947D4002FBF77 /* visitus_button_day.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D8124251DA947D4002FBF77 /* visitus_button_day.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,12 +42,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		5D73B7A41DA91381000AE25C /* AssetModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssetModel.swift; sourceTree = "<group>"; };
 		5D73B7A71DA922CB000AE25C /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		5D73B7A81DA922CB000AE25C /* AlamofireObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AlamofireObjectMapper.framework; path = Carthage/Build/iOS/AlamofireObjectMapper.framework; sourceTree = "<group>"; };
 		5D73B7A91DA922CB000AE25C /* ObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjectMapper.framework; path = Carthage/Build/iOS/ObjectMapper.framework; sourceTree = "<group>"; };
 		5D73B7AA1DA922CB000AE25C /* ReactiveSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveSwift.framework; path = Carthage/Build/iOS/ReactiveSwift.framework; sourceTree = "<group>"; };
 		5D73B7AB1DA922CB000AE25C /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
+		5D73B7B21DA92BC3000AE25C /* ResponseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseModel.swift; sourceTree = "<group>"; };
+		5D73B7B41DA92BFE000AE25C /* MuseetModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MuseetModel.swift; sourceTree = "<group>"; };
 		5D7B71711DA84318000ED98A /* Art-Data.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Art-Data.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D7B71741DA84318000ED98A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5D7B71791DA84318000ED98A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -51,9 +59,16 @@
 		5D7B71891DA84319000ED98A /* Art_DataTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Art_DataTests.swift; sourceTree = "<group>"; };
 		5D7B718B1DA84319000ED98A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5D7B71991DA87810000ED98A /* WeatherOverviewViewContoller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherOverviewViewContoller.swift; sourceTree = "<group>"; };
-		5D7B719C1DA87810000ED98A /* ConnectionService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectionService.swift; sourceTree = "<group>"; };
-		5D7B719E1DA87810000ED98A /* WeatherOverviewViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherOverviewViewModel.swift; sourceTree = "<group>"; };
 		5D7B71BD1DA87E0F000ED98A /* WeatherModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherModel.swift; sourceTree = "<group>"; };
+		5D8124121DA93EBB002FBF77 /* Lato-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Bold.ttf"; sourceTree = "<group>"; };
+		5D8124131DA93EBB002FBF77 /* Lato-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Regular.ttf"; sourceTree = "<group>"; };
+		5D8124151DA93EBB002FBF77 /* visitus_button_day.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = visitus_button_day.svg; sourceTree = "<group>"; };
+		5D8124161DA93EBB002FBF77 /* visitus_button_night.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = visitus_button_night.svg; sourceTree = "<group>"; };
+		5D81241B1DA942BB002FBF77 /* AlamofireImage.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = AlamofireImage.framework.dSYM; path = Carthage/Build/iOS/AlamofireImage.framework.dSYM; sourceTree = "<group>"; };
+		5D81241C1DA942BB002FBF77 /* SVGPath.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SVGPath.framework; path = Carthage/Build/iOS/SVGPath.framework; sourceTree = "<group>"; };
+		5D81241F1DA942CC002FBF77 /* AlamofireImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AlamofireImage.framework; path = Carthage/Build/iOS/AlamofireImage.framework; sourceTree = "<group>"; };
+		5D8124231DA947C9002FBF77 /* visitus_button_night.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = visitus_button_night.png; sourceTree = "<group>"; };
+		5D8124251DA947D4002FBF77 /* visitus_button_day.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = visitus_button_day.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +76,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5D8124201DA942CC002FBF77 /* AlamofireImage.framework in Frameworks */,
+				5D81241E1DA942BB002FBF77 /* SVGPath.framework in Frameworks */,
 				5D73B7AC1DA922CB000AE25C /* Alamofire.framework in Frameworks */,
 				5D73B7AD1DA922CB000AE25C /* AlamofireObjectMapper.framework in Frameworks */,
 				5D73B7AE1DA922CB000AE25C /* ObjectMapper.framework in Frameworks */,
@@ -82,6 +99,9 @@
 		5D73B7A61DA922CB000AE25C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5D81241F1DA942CC002FBF77 /* AlamofireImage.framework */,
+				5D81241B1DA942BB002FBF77 /* AlamofireImage.framework.dSYM */,
+				5D81241C1DA942BB002FBF77 /* SVGPath.framework */,
 				5D73B7A71DA922CB000AE25C /* Alamofire.framework */,
 				5D73B7A81DA922CB000AE25C /* AlamofireObjectMapper.framework */,
 				5D73B7A91DA922CB000AE25C /* ObjectMapper.framework */,
@@ -147,8 +167,9 @@
 		5D7B719A1DA87810000ED98A /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				5D73B7B21DA92BC3000AE25C /* ResponseModel.swift */,
 				5D7B71BD1DA87E0F000ED98A /* WeatherModel.swift */,
-				5D73B7A41DA91381000AE25C /* AssetModel.swift */,
+				5D73B7B41DA92BFE000AE25C /* MuseetModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -156,7 +177,6 @@
 		5D7B719B1DA87810000ED98A /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				5D7B719C1DA87810000ED98A /* ConnectionService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -164,7 +184,6 @@
 		5D7B719D1DA87810000ED98A /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				5D7B719E1DA87810000ED98A /* WeatherOverviewViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -180,8 +199,32 @@
 		5D7B71B11DA87A53000ED98A /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				5D8124231DA947C9002FBF77 /* visitus_button_night.png */,
+				5D8124251DA947D4002FBF77 /* visitus_button_day.png */,
+				5D8124111DA93EBB002FBF77 /* font */,
+				5D8124141DA93EBB002FBF77 /* svg */,
 			);
 			path = Assets;
+			sourceTree = "<group>";
+		};
+		5D8124111DA93EBB002FBF77 /* font */ = {
+			isa = PBXGroup;
+			children = (
+				5D8124121DA93EBB002FBF77 /* Lato-Bold.ttf */,
+				5D8124131DA93EBB002FBF77 /* Lato-Regular.ttf */,
+			);
+			name = font;
+			path = ../../../../../assets/font;
+			sourceTree = "<group>";
+		};
+		5D8124141DA93EBB002FBF77 /* svg */ = {
+			isa = PBXGroup;
+			children = (
+				5D8124151DA93EBB002FBF77 /* visitus_button_day.svg */,
+				5D8124161DA93EBB002FBF77 /* visitus_button_night.svg */,
+			);
+			name = svg;
+			path = ../../../../../assets/svg;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -271,7 +314,13 @@
 			files = (
 				5D7B717F1DA84318000ED98A /* LaunchScreen.storyboard in Resources */,
 				5D7B717C1DA84318000ED98A /* Assets.xcassets in Resources */,
+				5D8124181DA93EBB002FBF77 /* Lato-Regular.ttf in Resources */,
+				5D81241A1DA93EBB002FBF77 /* visitus_button_night.svg in Resources */,
 				5D7B717A1DA84318000ED98A /* Main.storyboard in Resources */,
+				5D8124171DA93EBB002FBF77 /* Lato-Bold.ttf in Resources */,
+				5D8124261DA947D4002FBF77 /* visitus_button_day.png in Resources */,
+				5D8124191DA93EBB002FBF77 /* visitus_button_day.svg in Resources */,
+				5D8124241DA947C9002FBF77 /* visitus_button_night.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,6 +345,8 @@
 				"$(SRCROOT)/Carthage/Build/iOS/ObjectMapper.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/ReactiveSwift.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Result.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/AlamofireImage.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SVGPath.framework",
 			);
 			name = "Carthage copy";
 			outputPaths = (
@@ -311,11 +362,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5D7B71A21DA87810000ED98A /* WeatherOverviewViewModel.swift in Sources */,
+				5D73B7B51DA92BFE000AE25C /* MuseetModel.swift in Sources */,
 				5D7B71BE1DA87E0F000ED98A /* WeatherModel.swift in Sources */,
-				5D73B7A51DA91381000AE25C /* AssetModel.swift in Sources */,
 				5D7B71751DA84318000ED98A /* AppDelegate.swift in Sources */,
-				5D7B71A11DA87810000ED98A /* ConnectionService.swift in Sources */,
+				5D73B7B31DA92BC3000AE25C /* ResponseModel.swift in Sources */,
 				5D7B71A01DA87810000ED98A /* WeatherOverviewViewContoller.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

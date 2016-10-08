@@ -10,16 +10,13 @@ import ObjectMapper
 
 class WeatherModel: Mappable {
     
-    var assets: [AssetModel]?
     var temperature: String?
     var weatherState: String?
     
-    required init?(map: Map) {
-    
+    required init?(map: Map) {    
     }
     
     func mapping(map: Map) {
-        assets <- map["link"]
         temperature <- map["temperature"]
         weatherState <- map["weatherState"]
     }

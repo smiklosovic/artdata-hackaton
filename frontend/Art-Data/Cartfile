@@ -4,4 +4,4 @@ github "tristanhimmelman/AlamofireObjectMapper" ~> 4.0
 github "jakenberg/ObjectMapper-Realm"
 github "Hearst-DD/ObjectMapper" ~> 2.1
 github "Alamofire/AlamofireImage" ~> 3.1
-
+github "timrwood/SVGPath" "swift/3.0"

@@ -1,5 +1,5 @@
 //
-//  AssetModel.swift
+//  MuseetModel.swift
 //  Art-Data
 //
 //  Created by Alexey Potapov on 08/10/2016.
@@ -8,15 +8,13 @@
 
 import ObjectMapper
 
-class AssetModel: Mappable {
-
+class MuseetModel: Mappable {
+    
     var link: String?
     var title: String?
     var author: String?
     
-    required init?(map: Map) {
-    
-    }
+    required init?(map: Map) {}
     
     func mapping(map: Map) {
         link <- map["link"]
