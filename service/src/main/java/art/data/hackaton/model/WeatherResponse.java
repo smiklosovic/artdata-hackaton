@@ -11,7 +11,4 @@ public class WeatherResponse {
 
     @JsonProperty
     private String condition;
-
-    @JsonProperty
-    private String phaseOfDay;
 }

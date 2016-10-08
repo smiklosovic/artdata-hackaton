@@ -4,7 +4,6 @@ import static java.util.Optional.of;
 
 import art.data.hackaton.model.NasjonalMuseetRequest;
 import art.data.hackaton.model.NasjonalMuseetResponse;
-import art.data.hackaton.model.SearchRequest;
 import art.data.hackaton.model.SearchResponse;
 import art.data.hackaton.model.WeatherResponse;
 import art.data.hackaton.service.museet.NasjonalMuseetRestRequestBuilder;
@@ -28,11 +27,11 @@ public class SearchService {
     @Autowired
     private NasjonalMuseetRestRequestBuilder nasjonalMuseetRestRequestBuilder;
 
-    public Optional<SearchResponse> search(int timeInHours) {
+    public Optional<SearchResponse> search(int timeInHours, String city) {
 
         SearchResponse searchResponse = new SearchResponse();
 
-        Optional<WeatherResponse> weatherResponse = weatherService.search();
+        Optional<WeatherResponse> weatherResponse = weatherService.search(city);
 
         if (weatherResponse.isPresent()) {
             searchResponse.setWeather(weatherResponse.get());

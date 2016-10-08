@@ -24,11 +24,11 @@ public class SearchController {
     private SearchService searchService;
 
     @RequestMapping("/search")
-    public ResponseEntity<SearchResponse> search(@RequestParam(value = "time", required = true) int time) {
+    public ResponseEntity<SearchResponse> search(@RequestParam(value = "time", required = true) int time, @RequestParam(value = "city", defaultValue = "Oslo") String city) {
 
         logger.info("[search]");
 
-        Optional<SearchResponse> searchResponse = searchService.search(time);
+        Optional<SearchResponse> searchResponse = searchService.search(time, city);
 
         return searchResponse.isPresent() ? new ResponseEntity<>(searchResponse.get(), OK) : new ResponseEntity<>(BAD_REQUEST);
     }

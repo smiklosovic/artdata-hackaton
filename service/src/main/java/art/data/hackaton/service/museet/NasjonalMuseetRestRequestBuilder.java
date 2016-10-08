@@ -8,6 +8,7 @@ import art.data.hackaton.model.WeatherResponse;
 import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.Optional;
 
@@ -34,14 +35,26 @@ public class NasjonalMuseetRestRequestBuilder {
         return nasjonalMuseetRequest;
     }
 
+    /*
+    - snow = snø
+    - rain = rain
+    - sun = sol
+    - fog = tåke
+    - cloudy = skyet
+    - cloud = sky
+    - clouds = skyer
+    - windy = vindfull
+    - wind = vind
+    - storm = storm
+    - breeze = bris
+    - gale = kuling
+     */
     private List<String> getWeatherConditions(WeatherResponse weatherResponse) {
         String condition = weatherResponse.getCondition();
 
         // todo parse english weather conditions to norwegian synonyms
 
-        List<String> searchTermConditions = new ArrayList<>();
-
-        return searchTermConditions;
+        return asList("vind", "regn");
     }
 
     private List<String> addPhasesOfDay(int hour) {

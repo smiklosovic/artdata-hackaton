@@ -27,6 +27,7 @@
         <version.jackson.annotations>2.8.0</version.jackson.annotations>
         <version.javax.validation>1.1.0.Final</version.javax.validation>
         <version.lombok>1.16.10</version.lombok>
+        <version.json>20160810</version.json>
         <version.org.mockito.all>1.10.19</version.org.mockito.all>
 
         <maven.compiler.target>1.8</maven.compiler.target>
@@ -94,6 +95,12 @@
             <artifactId>lombok</artifactId>
             <version>${version.lombok}</version>
             <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.json</groupId>
+            <artifactId>json</artifactId>
+            <version>${version.json}</version>
         </dependency>
 
         <!-- Logging -->
