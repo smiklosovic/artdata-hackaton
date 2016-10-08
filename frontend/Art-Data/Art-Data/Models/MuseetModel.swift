@@ -17,7 +17,7 @@ class MuseetModel: Mappable {
     required init?(map: Map) {}
     
     func mapping(map: Map) {
-        link <- map["link"]
+        link <- map["link_to_image"]
         title <- map["title"]
         author <- map["author"]
     }

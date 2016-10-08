@@ -31,15 +31,13 @@
       "scale" : "3x"
     },
     {
-      "size" : "60x60",
       "idiom" : "iphone",
-      "filename" : "app_ico_bleda-4.png",
+      "size" : "60x60",
       "scale" : "2x"
     },
     {
-      "size" : "60x60",
       "idiom" : "iphone",
-      "filename" : "app_ico_bleda-3.png",
+      "size" : "60x60",
       "scale" : "3x"
     },
     {
@@ -73,21 +71,18 @@
       "scale" : "2x"
     },
     {
-      "size" : "76x76",
       "idiom" : "ipad",
-      "filename" : "app_ico_bleda-1.png",
+      "size" : "76x76",
       "scale" : "1x"
     },
     {
-      "size" : "76x76",
       "idiom" : "ipad",
-      "filename" : "app_ico_bleda-2.png",
+      "size" : "76x76",
       "scale" : "2x"
     },
     {
-      "size" : "83.5x83.5",
       "idiom" : "ipad",
-      "filename" : "app_ico_bleda.png",
+      "size" : "83.5x83.5",
       "scale" : "2x"
     }
   ],

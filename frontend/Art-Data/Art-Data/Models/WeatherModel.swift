@@ -18,6 +18,6 @@ class WeatherModel: Mappable {
     
     func mapping(map: Map) {
         temperature <- map["temperature"]
-        weatherState <- map["weatherState"]
+        weatherState <- map["condition"]
     }
 }
