@@ -1,23 +1,24 @@
 package art.data.hackaton.controller;
 
-import static java.util.Collections.singletonList;
+import static art.data.hackaton.Utils.dayUri;
+import static art.data.hackaton.Utils.eveningUri;
+import static art.data.hackaton.Utils.getHttpHeadersEntity;
+import static art.data.hackaton.Utils.morningUri;
 import static org.junit.Assert.assertNotNull;
 import static org.springframework.http.HttpMethod.GET;
-import static org.springframework.http.MediaType.APPLICATION_JSON_UTF8;
 
 import art.data.hackaton.configuration.DefaultTestAnnotations;
 import art.data.hackaton.model.SearchResponse;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.context.embedded.LocalServerPort;
 import org.springframework.boot.test.web.client.TestRestTemplate;
-import org.springframework.http.HttpEntity;
-import org.springframework.http.HttpHeaders;
 import org.springframework.http.ResponseEntity;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
-import java.net.URL;
+import java.net.URI;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @DefaultTestAnnotations
@@ -26,24 +27,46 @@ public class SearchControllerTest {
     @LocalServerPort
     private int port;
 
-    private URL endpoint;
-
+    @Autowired
     private TestRestTemplate restTemplate = new TestRestTemplate();
+
+    private URI morningURI;
+
+    private URI dayURI;
+
+    private URI eveningURI;
 
     @Before
     public void setUp() throws Exception {
-        this.endpoint = new URL("http://localhost:" + port + "/api/search");
+        this.eveningURI = eveningUri(port);
+        this.morningURI = morningUri(port);
+        this.dayURI = dayUri(port);
     }
 
     @Test
-    public void testSearchController() throws Exception {
+    public void testMorningURIInSearchController() throws Exception {
 
-        HttpHeaders httpHeaders = new HttpHeaders();
-        httpHeaders.setAccept(singletonList(APPLICATION_JSON_UTF8));
+        final ResponseEntity<SearchResponse> responseEntity = restTemplate.exchange(morningURI, GET, getHttpHeadersEntity(), SearchResponse.class);
 
-        HttpEntity<String> getSearchEntity = new HttpEntity<>(httpHeaders);
+        final SearchResponse searchResponse = responseEntity.getBody();
 
-        final ResponseEntity<SearchResponse> responseEntity = restTemplate.exchange(endpoint.toURI(), GET, getSearchEntity, SearchResponse.class);
+        assertNotNull(searchResponse);
+    }
+
+    @Test
+    public void testDayURIInSearchController() throws Exception {
+
+        final ResponseEntity<SearchResponse> responseEntity = restTemplate.exchange(dayURI, GET, getHttpHeadersEntity(), SearchResponse.class);
+
+        final SearchResponse searchResponse = responseEntity.getBody();
+
+        assertNotNull(searchResponse);
+    }
+
+    @Test
+    public void testEveningURIInSearchController() throws Exception {
+
+        final ResponseEntity<SearchResponse> responseEntity = restTemplate.exchange(eveningURI, GET, getHttpHeadersEntity(), SearchResponse.class);
 
         final SearchResponse searchResponse = responseEntity.getBody();
 

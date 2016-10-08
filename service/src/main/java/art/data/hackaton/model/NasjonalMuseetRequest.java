@@ -1,12 +1,11 @@
 package art.data.hackaton.model;
 
+import lombok.Data;
+
+import java.util.List;
+
+@Data
 public class NasjonalMuseetRequest {
 
-    private NasjonalMuseetRequest() {
-
-    }
-
-    public static NasjonalMuseetRequest build(SearchRequest searchRequest) {
-        return new NasjonalMuseetRequest();
-    }
+    private List<String> values;
 }

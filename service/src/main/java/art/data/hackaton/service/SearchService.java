@@ -1,5 +1,7 @@
 package art.data.hackaton.service;
 
+import static java.util.Optional.of;
+
 import art.data.hackaton.model.NasjonalMuseetRequest;
 import art.data.hackaton.model.NasjonalMuseetResponse;
 import art.data.hackaton.model.SearchRequest;
@@ -11,6 +13,7 @@ import art.data.hackaton.service.weather.WeatherService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
 import java.util.Optional;
 
 @Service
@@ -25,25 +28,25 @@ public class SearchService {
     @Autowired
     private NasjonalMuseetRestRequestBuilder nasjonalMuseetRestRequestBuilder;
 
-    public Optional<SearchResponse> search() {
-
-        NasjonalMuseetRequest nasjonalMuseetRequest = nasjonalMuseetRestRequestBuilder.buildQuery(new SearchRequest());
-
-        Optional<NasjonalMuseetResponse> nasjonalMuseetResponse = nasjonalMuseetService.search(nasjonalMuseetRequest);
-
-        Optional<WeatherResponse> weatherResponse = weatherService.search();
+    public Optional<SearchResponse> search(int timeInHours) {
 
         SearchResponse searchResponse = new SearchResponse();
 
-        if (nasjonalMuseetResponse.isPresent()) {
-            searchResponse.setMuseet(nasjonalMuseetResponse.get());
-        }
+        Optional<WeatherResponse> weatherResponse = weatherService.search();
 
         if (weatherResponse.isPresent()) {
             searchResponse.setWeather(weatherResponse.get());
         }
 
-        return Optional.of(searchResponse);
+        NasjonalMuseetRequest nasjonalMuseetRequest = nasjonalMuseetRestRequestBuilder.buildQuery(timeInHours, weatherResponse);
+
+        final Optional<List<NasjonalMuseetResponse>> nasjonalMuseetResponse = nasjonalMuseetService.search(nasjonalMuseetRequest);
+
+        if (nasjonalMuseetResponse.isPresent()) {
+            searchResponse.setMuseet(nasjonalMuseetResponse.get());
+        }
+
+        return of(searchResponse);
     }
 
 }
