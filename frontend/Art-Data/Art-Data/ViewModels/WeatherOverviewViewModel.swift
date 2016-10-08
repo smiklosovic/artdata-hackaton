@@ -14,10 +14,6 @@ class WeatherOverviewViewModel: AnyObject {
         return ConnectionService()
     }()
     
-    lazy var count: Int = {
-        return 1
-    }()
-
     //mock
     lazy var weatherModel: WeatherModel = {
         let element = WeatherModel()
@@ -34,33 +30,7 @@ class WeatherOverviewViewModel: AnyObject {
         return element
     }()
     
-    func count(forSection section: Int) -> Int {
-        return 3
-    }
-    
-    func configureCell(forCollectionView collectionView: UICollectionView, forIndexPath indexPath: IndexPath) -> UICollectionViewCell {
-        var cell = UICollectionViewCell()
-        switch indexPath.row {
-        case 0:
-            let collectionCell = collectionView.dequeueReusableCell(withReuseIdentifier:~|InfoCollectionViewCell.self, for: indexPath) as! InfoCollectionViewCell
-            collectionCell.temperatureLabel.text = weatherModel.temperature
-            collectionCell.weatherStateLabel.text = weatherModel.weatherState
-            cell = collectionCell
-            break
-        case 1:
-            let collectionCell = collectionView.dequeueReusableCell(withReuseIdentifier:~|ImageCollectionViewCell.self, for: indexPath) as! ImageCollectionViewCell
-            collectionCell.assets = weatherModel.assets
-            cell = collectionCell
-            break
-        case 2:
-            let collectionCell = collectionView.dequeueReusableCell(withReuseIdentifier:~|DescriptionCollectionViewCell.self, for: indexPath) as! DescriptionCollectionViewCell
-            collectionCell.assets = weatherModel.assets
-            cell = collectionCell
-            break
-        default:
-            break
-        }
+    func loadModel() {
         
-        return cell
     }
 }

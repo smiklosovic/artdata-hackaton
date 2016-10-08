@@ -13,5 +13,4 @@ class WeatherModel: AnyObject {
     var assets: [AssetModel]!
     var temperature: String!
     var weatherState: String!
-    
 }
